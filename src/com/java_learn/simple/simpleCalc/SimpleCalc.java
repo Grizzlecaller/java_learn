@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class SimpleCalc {
     public static void main(String[] args) {
         Scanner userInput = new Scanner(System.in);
-        float result = 0;
+
         System.out.print("input first number: ");
         float num1 = userInput.nextInt();
 
@@ -16,12 +16,10 @@ public class SimpleCalc {
         String action = userInput.nextLine();
         action = userInput.nextLine();
 
-        if (action.equals("+")) result = sum(num1, num2);
-        if (action.equals("-")) result = sub(num1, num2);
-        if (action.equals("*")) result = mul(num1, num2);
-        if (action.equals("/")) result = div(num1, num2);
-
-        finalResult(result);
+        if (action.equals("+")) finalResult(sum(num1, num2));
+        if (action.equals("-")) finalResult(sub(num1, num2));
+        if (action.equals("*")) finalResult(mul(num1, num2));
+        if (action.equals("/")) finalResult(div(num1, num2));
     }
 
     public static float sum(float a, float b) {

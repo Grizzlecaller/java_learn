@@ -1,6 +1,6 @@
 package com.java_learn.simple.simpleCalc;
 
-public class SimpleCalcClass {
+public class Calculator {
 
     private float firstNumber;
     private float secondNumber;

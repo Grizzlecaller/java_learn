@@ -2,7 +2,7 @@ package com.java_learn.simple.simpleCalc;
 
 public class SimpleCalcClass {
 
-    public float firstNumber;
+    private float firstNumber;
     private float secondNumber;
     private String action;
 

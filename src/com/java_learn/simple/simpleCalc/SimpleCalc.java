@@ -19,7 +19,7 @@ public class SimpleCalc {
         if (action.equals("+")) finalResult(sum(num1, num2));
         if (action.equals("-")) finalResult(sub(num1, num2));
         if (action.equals("*")) finalResult(mul(num1, num2));
-        if (action.equals("/")) finalResult(div(num1, num2));
+        if (action.equals("/")) finalResult(isNum2EqualZero(num1, num2));
     }
 
     public static float sum(float a, float b) {
@@ -32,6 +32,15 @@ public class SimpleCalc {
 
     public static float mul(float a, float b) {
         return a * b;
+    }
+
+    public static float isNum2EqualZero(float a, float b) {
+        if (b == 0) {
+            System.out.println("You can`t divide by zero");
+        } else {
+            return div(a, b);
+        }
+        return Float.NEGATIVE_INFINITY;
     }
 
     public static float div(float a, float b) {
